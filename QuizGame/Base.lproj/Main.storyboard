@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,7 +12,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainMenuViewController" customModule="QuizGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTw-YG-B0f">
@@ -48,11 +47,11 @@
             <objects>
                 <viewController id="gYS-Oy-OvV" customClass="GameViewController" customModule="QuizGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jEM-87-zps">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvw-Wa-oJG">
-                                <rect key="frame" x="20" y="94" width="374" height="300"/>
+                                <rect key="frame" x="20" y="50" width="560" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="s01-Id-ZHS"/>
                                 </constraints>
@@ -62,7 +61,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос № _" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LYF-im-5OO">
-                                <rect key="frame" x="57" y="64" width="300" height="26.5"/>
+                                <rect key="frame" x="150" y="20" width="300" height="26.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="MUB-1U-j4H"/>
                                 </constraints>
@@ -71,22 +70,22 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="kLC-sd-FgD">
-                                <rect key="frame" x="20" y="414" width="374" height="200"/>
+                                <rect key="frame" x="20" y="370" width="560" height="200"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Aq-Dw-ujs">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Gl-43-b4F">
-                                        <rect key="frame" x="0.0" y="56.5" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="56.5" width="560" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAJ-Yw-KvL">
-                                        <rect key="frame" x="0.0" y="113.5" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="113.5" width="560" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFJ-nU-rEd">
-                                        <rect key="frame" x="0.0" y="170" width="374" height="30"/>
+                                        <rect key="frame" x="0.0" y="170" width="560" height="30"/>
                                         <state key="normal" title="Button"/>
                                     </button>
                                 </subviews>
@@ -110,10 +109,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="rj9-cu-oMI"/>
                     <connections>
-                        <outlet property="answerA" destination="2Aq-Dw-ujs" id="B1W-25-xc8"/>
-                        <outlet property="answerB" destination="2Gl-43-b4F" id="IFp-uP-Qs4"/>
-                        <outlet property="answerC" destination="GAJ-Yw-KvL" id="wXP-kG-d41"/>
-                        <outlet property="answerD" destination="VFJ-nU-rEd" id="GfJ-QH-IXu"/>
+                        <outlet property="answerAButton" destination="2Aq-Dw-ujs" id="B1W-25-xc8"/>
+                        <outlet property="answerBButton" destination="2Gl-43-b4F" id="IFp-uP-Qs4"/>
+                        <outlet property="answerCButton" destination="GAJ-Yw-KvL" id="wXP-kG-d41"/>
+                        <outlet property="answerDButton" destination="VFJ-nU-rEd" id="GfJ-QH-IXu"/>
                         <outlet property="questionLabel" destination="dvw-Wa-oJG" id="qE2-iS-TFc"/>
                         <outlet property="questionNumberLabel" destination="LYF-im-5OO" id="sVs-T6-MAi"/>
                     </connections>
@@ -127,15 +126,15 @@
             <objects>
                 <tableViewController id="MTv-au-jle" customClass="ResultsViewController" customModule="QuizGame" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="h7j-Gn-ozd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="QDB-xe-l2x">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
+                                <rect key="frame" x="0.0" y="24.5" width="600" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QDB-xe-l2x" id="wrw-ru-TVm">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

@@ -16,10 +16,10 @@ class GameViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var questionNumberLabel: UILabel!
     
-    @IBOutlet weak var answerA: UIButton!
-    @IBOutlet weak var answerB: UIButton!
-    @IBOutlet weak var answerC: UIButton!
-    @IBOutlet weak var answerD: UIButton!
+    @IBOutlet weak var answerAButton: UIButton!
+    @IBOutlet weak var answerBButton: UIButton!
+    @IBOutlet weak var answerCButton: UIButton!
+    @IBOutlet weak var answerDButton: UIButton!
     
     var delegate: GameViewControllerDelegate?
     var questions = [Question]()
@@ -28,10 +28,10 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         questions = QuestionService.getQuestions()
-        answerA.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
-        answerB.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
-        answerC.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
-        answerD.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
+        answerAButton.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
+        answerBButton.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
+        answerCButton.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
+        answerDButton.addTarget(self, action: #selector(checkAnswer), for: .touchDown)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -43,10 +43,10 @@ class GameViewController: UIViewController {
         questionLabel.text = questions[currentQuestion].question
         questionNumberLabel.text = "Вопрос № \(currentQuestion + 1)"
         let answers = questions[currentQuestion].answers.shuffled()
-        answerA.setTitle(answers[0], for: .normal)
-        answerB.setTitle(answers[1], for: .normal)
-        answerC.setTitle(answers[2], for: .normal)
-        answerD.setTitle(answers[3], for: .normal)
+        answerAButton.setTitle(answers[0], for: .normal)
+        answerBButton.setTitle(answers[1], for: .normal)
+        answerCButton.setTitle(answers[2], for: .normal)
+        answerDButton.setTitle(answers[3], for: .normal)
         
     }
     
