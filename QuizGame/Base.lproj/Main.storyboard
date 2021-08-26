@@ -167,9 +167,9 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXH-5x-oay">
-                                        <rect key="frame" x="0.0" y="107" width="222" height="43"/>
+                                        <rect key="frame" x="0.0" y="107" width="317" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <state key="normal" title="Добавить свои вопросы"/>
+                                        <state key="normal" title="Добавить/Редактировать вопросы"/>
                                         <connections>
                                             <segue destination="bOW-KW-sLY" kind="show" id="cQN-lH-ACS"/>
                                         </connections>
