@@ -23,6 +23,9 @@
 		3691619426C5665000E99DDC /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3691619226C5665000E99DDC /* ResultCell.swift */; };
 		3691619526C5665000E99DDC /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3691619326C5665000E99DDC /* ResultCell.xib */; };
 		3691619826C56E6000E99DDC /* ResultsCareTaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3691619726C56E6000E99DDC /* ResultsCareTaker.swift */; };
+		36977DCC26D78C18007F26FB /* AddQuestionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36977DCB26D78C18007F26FB /* AddQuestionsTableViewController.swift */; };
+		36977DCF26D79857007F26FB /* AddQuestionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36977DCD26D79856007F26FB /* AddQuestionTableViewCell.swift */; };
+		36977DD026D79857007F26FB /* AddQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36977DCE26D79857007F26FB /* AddQuestionTableViewCell.xib */; };
 		36CF3C7D26C99DA9003C21F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF3C7C26C99DA9003C21F9 /* SettingsViewController.swift */; };
 		36CF3C8026C9AFC0003C21F9 /* QuestionChooseStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF3C7F26C9AFC0003C21F9 /* QuestionChooseStrategy.swift */; };
 		36CF3C8226C9B67A003C21F9 /* RandomQuestionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36CF3C8126C9B67A003C21F9 /* RandomQuestionStrategy.swift */; };
@@ -49,6 +52,9 @@
 		3691619226C5665000E99DDC /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		3691619326C5665000E99DDC /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
 		3691619726C56E6000E99DDC /* ResultsCareTaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCareTaker.swift; sourceTree = "<group>"; };
+		36977DCB26D78C18007F26FB /* AddQuestionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionsTableViewController.swift; sourceTree = "<group>"; };
+		36977DCD26D79856007F26FB /* AddQuestionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddQuestionTableViewCell.swift; sourceTree = "<group>"; };
+		36977DCE26D79857007F26FB /* AddQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddQuestionTableViewCell.xib; sourceTree = "<group>"; };
 		36CF3C7C26C99DA9003C21F9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		36CF3C7F26C9AFC0003C21F9 /* QuestionChooseStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionChooseStrategy.swift; sourceTree = "<group>"; };
 		36CF3C8126C9B67A003C21F9 /* RandomQuestionStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionStrategy.swift; sourceTree = "<group>"; };
@@ -113,6 +119,7 @@
 				368F24DA26C41379007396C4 /* GameViewController.swift */,
 				3691618F26C5659600E99DDC /* ResultsViewController.swift */,
 				36CF3C7C26C99DA9003C21F9 /* SettingsViewController.swift */,
+				36977DCB26D78C18007F26FB /* AddQuestionsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -154,6 +161,8 @@
 			children = (
 				3691619226C5665000E99DDC /* ResultCell.swift */,
 				3691619326C5665000E99DDC /* ResultCell.xib */,
+				36977DCD26D79856007F26FB /* AddQuestionTableViewCell.swift */,
+				36977DCE26D79857007F26FB /* AddQuestionTableViewCell.xib */,
 			);
 			path = ReusableCells;
 			sourceTree = "<group>";
@@ -244,6 +253,7 @@
 				368F24D226C40B69007396C4 /* LaunchScreen.storyboard in Resources */,
 				368F24CF26C40B69007396C4 /* Assets.xcassets in Resources */,
 				3691619526C5665000E99DDC /* ResultCell.xib in Resources */,
+				36977DD026D79857007F26FB /* AddQuestionTableViewCell.xib in Resources */,
 				368F24CD26C40B64007396C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3691618E26C562DA00E99DDC /* Result.swift in Sources */,
+				36977DCF26D79857007F26FB /* AddQuestionTableViewCell.swift in Sources */,
 				368F24DE26C417A3007396C4 /* Question.swift in Sources */,
 				3691618C26C5378200E99DDC /* QuestionService.swift in Sources */,
 				3691619026C5659600E99DDC /* ResultsViewController.swift in Sources */,
@@ -266,6 +277,7 @@
 				3691618A26C5375100E99DDC /* Game.swift in Sources */,
 				368F24CA26C40B64007396C4 /* MainMenuViewController.swift in Sources */,
 				36CF3C8026C9AFC0003C21F9 /* QuestionChooseStrategy.swift in Sources */,
+				36977DCC26D78C18007F26FB /* AddQuestionsTableViewController.swift in Sources */,
 				36CF3C8226C9B67A003C21F9 /* RandomQuestionStrategy.swift in Sources */,
 				368F24E426C41B30007396C4 /* GameSession.swift in Sources */,
 				36CF3C8426C9B701003C21F9 /* SimpleQuestionStrategy.swift in Sources */,
